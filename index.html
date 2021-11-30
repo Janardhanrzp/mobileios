@@ -1,0 +1,14 @@
+<form action="{{ route('payment') }}" method="POST" > 	
+@csrf 	
+<script src="https://checkout.razorpay.com/v1/checkout.js" 			
+data-key="rzp_test_uGY0vXrwuQr9CD" 			
+data-amount="100" 			
+data-buttontext="product_price" 			
+data-name="{{ env('APP_NAME') }}" 			
+data-description="Payment done to system" 			
+data-image="{{ asset('assets/img/logo22.png') }}" 			
+data-prefill.name="name" 			
+data-prefill.email="email" 			
+data-theme.color="#0db9f2"> 
+</script> 
+</form>
